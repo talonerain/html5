@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html脚本</title>
+    </head>
+    <body>
+    <script>
+        document.write("Hello World!")
+    </script>
+    <p>当浏览器不支持脚本或者禁用脚本时，就会显示&lt;noscript&gt;标签的内容</p>
+    <noscript>抱歉，你的浏览器不支持</noscript>
+
+    <br>
+    <p>JavaScript能够直接写入HTML输出流中：</p>
+    <script>
+        document.write("<h1>这是一个标题</h1>")
+        document.write("<p>这是一个段落<p>")
+    </script>
+
+    <p id="demo">JavaScript点击事件</p>
+    <script>
+        function myFun()
+        {
+            document.getElementById("demo").innerHTML="Hello JavaScript"
+        }
+        function myFun2()
+        {
+            document.getElementById("demo").style.color="#ff0000"
+        }
+    </script>
+    <button type="button" onclick="myFun()">点我变字</button>
+    <button type="button" onclick="myFun2()">点我变色</button>
+    </body>
+</html>
